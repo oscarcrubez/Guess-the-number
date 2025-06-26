@@ -1,4 +1,5 @@
 package com.game.backend.service;
+
 import org.springframework.stereotype.Service;
 import java.util.Random;
 
@@ -15,7 +16,7 @@ public class GameService {
     public String checkGuess(int guessNumber) {
         if (guessNumber < secretNumber) {
             return "too low";
-        } else if (gessNumber > secretNumber) {
+        } else if (guessNumber > secretNumber) {
             return "too high";
         } else {
             return "correct";
